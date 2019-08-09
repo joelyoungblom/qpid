@@ -1,0 +1,46 @@
+br { display: none; }
+ol { padding-left: 0; }
+li { list-style: none; }
+
+dt {
+  float: left;
+  clear: both;
+  width: 6em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+dd:after {
+  content: '\A';
+  white-space: pre;
+  display: block;
+  height: .2em;
+}
+dd {
+  margin-left: 6.5em;
+}
+
+span, p {
+  font-style: italic; 
+}
+p {
+  margin: 0 0 .2em 0;
+  clear: left; 
+}
+
+nav * {
+  display: block;
+}
+
+h1, h2, h3 {
+  font: bold 100%/1 normal;
+  margin: .5em 0;
+}
+
+nav h2 {
+  float: left;
+  width: 6em;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
