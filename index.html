@@ -2,49 +2,79 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Qpid - Star Trek: The Next Generation</title>
     <link rel="stylesheet" href="styles.css">
 <style>
 
-body {
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-}
+
+br { display: none; }
+ol { padding-left: 0; }
+li { list-style: none; }
 
 dt {
-  margin-top: 1em;
-  margin-left: 20em;
+  float: left;
+  clear: both;
+  width: 6em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+dd:after {
+  content: '\A';
+  white-space: pre;
+  display: block;
+  height: .2em;
 }
 dd {
-  margin-left: 10em;
+  margin-left: 6.5em;
 }
-span {
-  margin-left: 5em;
-  display: block;
+
+span, p {
+  font-style: italic; 
 }
 p {
-  margin-left: 5em;
-}
-ol li {
-  list-style: none;
+  margin: 0 0 .2em 0;
+  clear: left; 
 }
 
-/* 
- * compressed
- */
-
-br {
-  display: none;
+nav * {
+  display: block;
 }
 
-dt {
-  margin-top: 1em;
+h1, h2, h3 { 
   display: inline;
+  font: 100% normal;
+  font-weight: bold; 
+  text-transform: uppercase;
 }
-
-span {
-  display: inline;
+body > h2:first-of-type {
+  display: inline; 
+  margin: 0;
 }
-
+body > h2:first-of-type:after {
+  content: ' \2014 ';
+  margin: 0 .2em;
+}
+h2:first-of-type + h1:after { 
+ content: '\A';
+ display: block;
+ white-space: pre;
+ height: .2em;
+}
+h2 + h3:before {
+  content: ' \2014 ';
+  margin: 0 .25em;
+}
+h3:after {
+  content: ' \A ';
+  white-space: pre;
+  display: block;
+  height: .2em;
+}
+h2 { 
+  clear: both;
+  float: left; 
+}
 
 </style>
     <script src="scripts.js"></script>
@@ -55,6 +85,41 @@ span {
 
                             <h1>Qpid</h1>
 
+                            <nav>
+                              <h2>Act 0</h2>
+                              <a href="#a0s0">Pre-Show</a>
+                             
+                              <h2>Act 1</h2>
+                              <a href="#a1s1">Scene 1</a>
+                              <a href="#a1s2">Scene 2</a>
+                              <a href="#a1s3">Scene 3</a>
+                              <a href="#a1s4">Scene 4</a>
+                              <a href="#a1s5">Scene 5</a>
+                             
+                              <h2>Act 2</h2>
+                              <a href="#a2s1">Scene 1</a>
+                              <a href="#a2s2">Scene 2</a>
+                              <a href="#a2s3">Scene 3</a>
+                              <a href="#a2s4">Scene 4</a>
+                              
+                              <h2>Act 3</h2>
+                              <a href="#a3s1">Scene 1</a>
+                              <a href="#a3s2">Scene 2</a>
+                              <a href="#a3s3">Scene 3</a>
+                              
+                              <h2>Act 4</h2>
+                              <a href="#a4s1">Scene 1</a>
+                              <a href="#a4s2">Scene 2</a>
+                              <a href="#a4s3">Scene 3</a>
+                              
+                              <h2>Act 5</h2>
+                              <a href="#a5s1">Scene 1</a>
+                              <a href="#a5s2">Scene 2</a>
+                              <a href="#a5s3">Scene 3</a>
+                              <a href="#a5s4">Scene 4</a>
+                            </nav>
+
+                            <section>
                              <h2>CAST</h2>
 
               <ol id="cast">
@@ -85,6 +150,10 @@ span {
                     <li>members of the court</li>
                   </ol></li>
                 </ol>
+
+                            </section>
+
+                            <main>
 
 <h2 id="a0s0">PRE SHOW</h2>
 
@@ -119,7 +188,7 @@ span {
 
         <p>
         STAGE MANAGER keeps doing pre-show checks. DIRECTOR <br>
-        enters speaks to SM about whatever quietly
+        enters speaks to STAGE MANAGER about whatever quietly
         </p>
 
                                         <dt>EVERYONE</dt>
@@ -503,21 +572,21 @@ span {
 
                                         <dt>PICARD</dt>
                         <dd>
-                                <p>
+                                <span>
                                 (smiling)
-                                </p>
+                                </span>
                         I wish I could believe you?
                         </dd>
 
                                         <dt>VASH</dt>
                         <dd>
-                                <p>
+                                <span>
                                 (smiling right back)
-                                </p>
+                                </span>
                         I'd be disappointed if you did.
-                                <p>
+                                <span>
                                 (a beat)
-                                </p>
+                                </span>
                         I really have missed you,
                         Jean-Luc.
                         </dd>
@@ -1096,7 +1165,7 @@ span {
         intricacies of human relationships.
         </p>
 
-<h2 id="a2s5">ACT ONE SCENE FIVE</h2>
+<h2 id="a1s5">ACT ONE SCENE FIVE</h2>
 
 <h3>TEN FORWARD</h3>
 
@@ -4307,6 +4376,8 @@ span {
         <p>
         End of Show.
         </p>
+
+                            </main>
 
   </body>
 </html>
